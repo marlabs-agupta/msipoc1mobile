@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="MSIPoC1Mobile.RegistrationPage"
+			 Title="Register">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Username" BackgroundColor="Black" TextColor="White" />
+            <Entry x:Name="usernameEntry" Placeholder="Enter UserName" />
+            <Label Text="Password" BackgroundColor="Black" TextColor="White"/>
+            <Entry x:Name="passwordEntry" IsPassword="true" />
+            <Button Text="Register" Clicked="OnRegisterButtonClicked" />
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
